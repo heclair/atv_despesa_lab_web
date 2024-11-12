@@ -9,8 +9,8 @@ const expenseSchema = new mongoose.Schema({
   },
   amount: {
     type: Number,
-    required: [true],
-    min: [0],  // Garante que o valor seja positivo
+    required: true,
+    min:0,  // Garante que o valor seja positivo
   },
   date: {
     type: Date,
